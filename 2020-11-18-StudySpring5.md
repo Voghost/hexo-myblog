@@ -37,6 +37,7 @@ tags:
 <img width=60%  src="https://oss.ghovos.top/hexo/myblog/spring/spring5-study/1-06-01.png"/>
 <img width=60%  src="https://oss.ghovos.top/hexo/myblog/spring/spring5-study/1-06-02.png"/><br>
 3. 创建一个普通类 `User`
+
 ```java
 package top.ghovos.spring5;
 
