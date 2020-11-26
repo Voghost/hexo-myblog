@@ -49,6 +49,7 @@ public class User {
 ```
 
 4. 创建配置文件`bean1.xml` 
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
@@ -59,6 +60,7 @@ public class User {
 </beans>
 ```
 5. 创建测试类 `TestSpring5`
+
 ```java
 package top.ghovos.spring5.testdemo;
 
@@ -90,10 +92,12 @@ public class TestSpring5 {
 ## 2.1 IOC 底层原理
 1. xml解析、工厂模式、反射
     1. 配置xml文件
+
     ```xml
     <bean id="dao" class="top.ghovos.spring5.User"></bean>
     ```
     2. 有seriece类和dao类，创建`工厂类`
+
     ```java
     //创建工厂类
     class UserFactory{
@@ -124,6 +128,7 @@ public class TestSpring5 {
 1. 基于xml配置文件方式
     * DI: 依赖注入， 就是注入属性
     1. 创建对象
+
     ```xml
     <bean id = "user" class = "top.ghovos.spring5.Book" name=""><bean>
         <!--id: 唯一标识-->
@@ -131,6 +136,7 @@ public class TestSpring5 {
         <!-- 创建对象时候，默认也是**无参数构造**方法完成对象创建-->
     ```
     2. 用set方式主语注入属性
+
     ```java
     // 1. 使用set方式注入
     public void setBook(String bName){
@@ -154,6 +160,7 @@ public class TestSpring5 {
         -->
     </bean>
     ```
+
     3. 使用有参构造方式注入
 
 2. 基于注解方式方式
