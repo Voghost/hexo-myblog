@@ -38,11 +38,11 @@ xdebug.remote_log=/tmp/xdebug.log
 ## 3.1 原因
 * 由于使用`archlinux` 环境, xdebug 版本更新到3.0
 * xdebug 将默认的监听口改为了 <font style="font-size:20px; color:red;">9003</font> 而**不是9000**
- ![xdebug03](https://oss.ghovos.top/hexo/myblog/xdebug/xdebug03.png "opt title")
+ ![xdebug03](https://oss.ghovos.top/hexo/myblog/xdebug/xdebug03.png)
 
 ## 3.2 将debug端口改为9003
- ![xdebug01](https://oss.ghovos.top/hexo/myblog/xdebug/xdebug01.png "opt title")
- ![xdebug02](https://oss.ghovos.top/hexo/myblog/xdebug/xdebug02.png "opt title")
+ ![xdebug01](https://oss.ghovos.top/hexo/myblog/xdebug/xdebug01.png)
+ ![xdebug02](https://oss.ghovos.top/hexo/myblog/xdebug/xdebug02.png)
 
 * 参考链接:
   * [stackoverflow](https://stackoverflow.com/questions/65092543/how-can-i-connect-xdebug-3-to-phpstorm-on-windows-10)
