@@ -1,6 +1,7 @@
 ---
 title: Linux 下xdebug-phpstorm 安装踩坑记录
 mathjax: true
+cover: https://oss.ghovos.top/hexo/myblog/xdebug/xdebug01.png
 tags:
   - xdebug
   - phpstorm
@@ -14,7 +15,6 @@ date: 2020-12-03 16:00:36
 sudo pacman -S xdebug
 # apt / yum 类似
 ```
-
 
 # 2. 编辑xdebug.ini文件
 ```sh
