@@ -17,14 +17,14 @@ tags:
 
 ---
 
-# 1. Spring 概念
-## 1.1 轻量、开源
-## 1.2 解决企业应用开发的复杂性
-## 1.3 核心 `IOC` 和 `AOP`
+## 1. Spring 概念
+### 1.1 轻量、开源
+### 1.2 解决企业应用开发的复杂性
+### 1.3 核心 `IOC` 和 `AOP`
 1. `IOC`: 控制反转，把创建对象过程交给Spring进行管理
 2. `Aop`: 面向切面，不修改源代码进行功能增强 
 
-## 1.4 特点
+### 1.4 特点
 1. 方便解耦、简化开发
 2. Aop编程支持
 3. 方便程序测试
@@ -32,7 +32,7 @@ tags:
 5. 方便事物操作 ...
 
 <!--more-->
-## 1.5 入门案例
+### 1.5 入门案例
 1. 下载 spring5 的jar包
 	* 下载地址: [repo.spring.io/release/org/springframework/spring](https://repo.spring.io/release/org/springframework/spring/)
 2. idea 新建java普通项目并导入相关包(基础)<br/>
@@ -90,8 +90,8 @@ public class TestSpring5 {
 <img src="https://oss.ghovos.top/hexo/myblog/spring/spring5-study/1-06-03.png" width=60%/>
 
 
-# 2. IOC 容器
-## 2.1 IOC 底层原理
+## 2. IOC 容器
+### 2.1 IOC 底层原理
 1. xml解析、工厂模式、反射
     1. 配置xml文件
 
@@ -110,23 +110,23 @@ public class TestSpring5 {
         }
     }
     ```
-## 2.2 IOC 接口(BeanFactory)
-### 1. IOC思想基于IOC容器完成，IOC容器底层就是**对象工厂**
+### 2.2 IOC 接口(BeanFactory)
+#### 1. IOC思想基于IOC容器完成，IOC容器底层就是**对象工厂**
 
-### 2. Spring 提供IOC容器实现的两种方式
+#### 2. Spring 提供IOC容器实现的两种方式
 1. `BeanFactory` : IOC容器的基本实现，是Spring内部的使用接口，不提供开发人员使用
     * 加载配置文件的时候不会创建对象，对象使用才会创建对象
 2. `ApplicationContext` BeanFactory 的子接口，提供更多强大的功能,一般由开发人员使用
     * 加载配置文件时就会创建对象
 3. ApplicationContext 接口有实现类
 
-## 2.3 IOC 操作Bean管理(基于xml)
-### 1. 什么是Bean管理
+### 2.3 IOC 操作Bean管理(基于xml)
+#### 1. 什么是Bean管理
 1. Bean 管理只两个操作
     1. sping 创建对象
     2. spirng 注入属性 (如: getter 或 setter)
 
-### 2. Bean 管理的操作两种方式
+#### 2. Bean 管理的操作两种方式
 1. 基于xml配置文件方式
     * DI: 依赖注入， 就是注入属性
     1. 创建对象
@@ -167,10 +167,10 @@ public class TestSpring5 {
 
 2. 基于注解方式方式
 
-## 2.4 IOC 操作Bean管理(基于注解)
+### 2.4 IOC 操作Bean管理(基于注解)
 
 
-# 3. Aop
-# 4. JdbcTemplate
-# 5. 事务管理
-# 6. Spring 5 新特性
+## 3. Aop
+## 4. JdbcTemplate
+## 5. 事务管理
+## 6. Spring 5 新特性

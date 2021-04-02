@@ -10,13 +10,13 @@ categories:
 date: 2020-12-03 16:00:36
 ---
 
-# 1. 安装xdebug
+## 1. 安装xdebug
 ```sh
 sudo pacman -S xdebug
 # apt / yum 类似
 ```
 
-# 2. 编辑xdebug.ini文件
+## 2. 编辑xdebug.ini文件
 ```sh
 sudo vim  /etc/php/conf.d/xdebug.ini
 ```
@@ -34,13 +34,13 @@ xdebug.remote_mode = "req"
 xdebug.remote_log=/tmp/xdebug.log
 ```
 
-# 3. 解决`Linux`下xdebug 更新到3.0 `phpstorm` debug 不起作用
-## 3.1 原因
+## 3. 解决`Linux`下xdebug 更新到3.0 `phpstorm` debug 不起作用
+### 3.1 原因
 * 由于使用`archlinux` 环境, xdebug 版本更新到3.0
 * xdebug 将默认的监听口改为了 <font style="font-size:20px; color:red;">9003</font> 而**不是9000**
  ![xdebug03](https://oss.ghovos.top/hexo/myblog/xdebug/xdebug03.png)
 
-## 3.2 将debug端口改为9003
+### 3.2 将debug端口改为9003
  ![xdebug01](https://oss.ghovos.top/hexo/myblog/xdebug/xdebug01.png)
  ![xdebug02](https://oss.ghovos.top/hexo/myblog/xdebug/xdebug02.png)
 
