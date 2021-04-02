@@ -3,6 +3,8 @@ title: spring 框架 (spring5)
 
 date: 2020-11-18 15:28:02
 
+cover: https://oss.ghovos.top/hexo/myblog/spring/spring5-study/1-06-01.png
+
 mathjax: true
 
 categories: 
